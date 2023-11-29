@@ -16,9 +16,6 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 
 selected_fruits = st.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Avocado', 'Strawberry'])
 
-# Do something with the selected fruits, if needed
-st.write("Selected Fruits:", selected_fruits)
-
 # Display the DataFrame
 st.dataframe(my_fruit_list)
 
